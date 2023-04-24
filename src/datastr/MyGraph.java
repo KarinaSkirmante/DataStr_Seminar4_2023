@@ -170,7 +170,9 @@ public class MyGraph<T> {
 	//updateEdgeWeigth
 	//updateEdgeByItsVertices
 	
-	
-	
+	//search in depth 
+	//search in width
+	//minimum spanning tree
+	//Deikstra
 
 }
