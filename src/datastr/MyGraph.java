@@ -130,7 +130,31 @@ public class MyGraph<T> {
 	}
 	
 	
-	
+	public void print() throws Exception {
+		//TODO 1. verification if it is isEmpty
+		if(isEmpty())
+		{
+			throw (new Exception("Graph is empty and it is not possible to print it"));
+		}
+		//TODO 2. for loop for vertices and print each vertice
+		
+		for(int i = 0; i < elementCounter; i++)
+		{
+			System.out.print(graphElements[i].getElement() + " -->");
+			
+			//TODO 2.1. while loop for edges and print each edge of the specific vertice
+			MyEdgeNode tempEdgeNode = graphElements[i].getFirstEdge();
+			
+			while(tempEdgeNode!=null) {
+				T verticeTo = (T) graphElements[tempEdgeNode.getIndexOfVertice()].getElement();
+				System.out.print(verticeTo + "( " + tempEdgeNode.getWeigth()+ " km);");
+				tempEdgeNode = tempEdgeNode.getNext();
+			}
+			System.out.println();
+		}
+		
+		
+	}
 	
 	//print
 	//makeEmpty
