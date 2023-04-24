@@ -147,7 +147,7 @@ public class MyGraph<T> {
 			
 			while(tempEdgeNode!=null) {
 				T verticeTo = (T) graphElements[tempEdgeNode.getIndexOfVertice()].getElement();
-				System.out.print(verticeTo + "( " + tempEdgeNode.getWeigth()+ " km);");
+				System.out.print(verticeTo + "(" + tempEdgeNode.getWeigth()+ " km);");
 				tempEdgeNode = tempEdgeNode.getNext();
 			}
 			System.out.println();
@@ -165,8 +165,10 @@ public class MyGraph<T> {
 	
 	//TODO
 	//removeVertice
+	//updateVertice
 	//removeEdge
-	//changeEdge
+	//updateEdgeWeigth
+	//updateEdgeByItsVertices
 	
 	
 	
