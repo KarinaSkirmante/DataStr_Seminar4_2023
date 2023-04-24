@@ -156,9 +156,12 @@ public class MyGraph<T> {
 		
 	}
 	
-	//print
-	//makeEmpty
-	
+	public void makeEmpty() {
+		elementCounter = 0;
+		arraySize = DEFAULT_ARRAY_SIZE;
+		graphElements = new MyVerticeNode[arraySize];
+		System.gc();
+	}
 	
 	//TODO
 	//removeVertice
